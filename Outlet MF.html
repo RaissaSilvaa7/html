@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+#letra {
+color: black;
+font-size: 30px;
+font-weight: bolder;
+}
+body {
+background-image: url(https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgba(255, 255, 255, 0.5);
+background-blend-mode: overlay;
+}
+/* Style for rounded buttons */
+button {
+border: none; /* Remove default border */
+outline: none; /* Remove default outline */
+padding: 10px 20px; /* Adjust padding as needed */
+border-radius: 50px; /* Set button radius for roundness*/
+cursor: pointer; /* Change cursor on hover for better UX */
+margin: 5px; /* Add some margin between buttons */
+background-color: #0bfc13; /* Green color for buttons *
+color: rgb(247,0,0); /* white text color*/
+}
+/* Style for hover effect (optional) */
+button:hover {
+background-color: #3e8e41; /* Darker green on hover */
+}
+audio::-webkit-media-controls-panel {
+background-color:pink;
+}
+</style>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta name="viewport" content="width=device-width,
+mitial-scale-1.0" />
+<title>Outlet MF</title>
+</head>
+<body bgcolor="black">
+<marquee id="letra" direction="down" scrollamount="10" height="250" height="200" style="border:black 5px solid;" behavior="alternate" vspace="1">
+<marquee behavior="alternate">Outlet MF! </marquee>
+</marquee>
+<div>
+<button onclick="document.getElementById('player').play()">Play</button> 
+
+<button onclick="document.getElementById('player').pause()">Pause</button>
+
+<button onclick="document.getElementById('player').volume+=0.1">Aumentar volume</button>
+
+<button onclick="document.getElementById('player').volume-=0.1">Diminuir volume </button>
+
+</div>
+<div id="btn">
+<audio id="player" autoplay="autoplay" controls="control" loop>
+<source src="musica-outlet-mf.mp3" type="audio/mp3" />
+Seu navegador não suporta HTML 5
+</audio>
+</div>
+</body>
+</html>
